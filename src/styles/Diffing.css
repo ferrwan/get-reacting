@@ -1,0 +1,14 @@
+.diffing {
+  display: flex;
+  text-align: left;
+  padding: 15px 20%;
+}
+
+.diffing__section {
+  flex: 1;
+}
+
+.diffing__section:last-child {
+  border-left: 1px solid;
+  padding-left: 8px;
+}

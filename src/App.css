@@ -26,3 +26,43 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.app__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 25px 20%;
+  background-color: #f2f2f2;
+  font-size: 20px;
+}
+
+.app__link a {
+  color: #3298df;
+  text-decoration: none;
+}
+
+.app__link a.active {
+  color: #0078af;
+  font-weight: bold;
+}
+
+a {
+  color: #3298df;
+}
+
+input, select {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #ccc;
+}
+
+button {
+  padding: 5px 9px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 3px 0;
+}

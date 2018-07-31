@@ -38,6 +38,15 @@ const createRandomPosition = ({ col, row, size }) => {
   return arr;
 }
 
+const Field = ({ onChange, label, value }) => (
+  <div>
+    <label>{ label }</label>
+    <div>
+      <input value={ value } onChange={ onChange } />
+    </div>
+  </div>
+)
+
 export default class Board extends PureComponent {
   constructor() {
     super();
@@ -103,7 +112,6 @@ export default class Board extends PureComponent {
   }
 
   changePosition = (i, j) => {
-    console.log('run');
     const { horsePosition, selectedHorse: { pos, player }, turn } = this.state;
     const position = horsePosition.slice(0);
     if (!position[i]) {
@@ -161,16 +169,19 @@ export default class Board extends PureComponent {
 
     return (
       <div className="board">
-        <div>
-          <input
-            value={ col }
+        <div className="board__field">
+          <Field
+            label="Col"
             onChange={ e => this.inputHandler(e.target.value, 'col') }
+            value={ col }
           />
-          <input
-            value={ row }
+          <Field
+            label="Row"
             onChange={ e => this.inputHandler(e.target.value, 'row') }
+            value={ row }
           />
-          <input
+          <Field
+            label="Horses"
             value={ horses }
             onChange={ this.horseInputHandler }
           />

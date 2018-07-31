@@ -1,0 +1,42 @@
+.redux {
+  padding: 10px 15%;
+  min-height: 80vh;
+}
+
+.redux__form {
+  text-align: left;
+}
+
+.redux__form form {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loading {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 5px solid;
+  border-color: #3298df #f35252 green yellow;
+  animation: App-logo-spin infinite 3s linear;
+}
+
+.users {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.user {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.user button {
+  float: right;
+}

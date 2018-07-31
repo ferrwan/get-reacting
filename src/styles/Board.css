@@ -1,3 +1,7 @@
+.board {
+  padding: 20px 0;
+}
+
 .board .board__container {
   margin: 0 auto;
   width: 70%;
@@ -37,6 +41,13 @@
 .board__col--selected {
   background: #f2f2f2;
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.board__field {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  padding: 5px 10%;
 }
 
 .horse {
